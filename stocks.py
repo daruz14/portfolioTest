@@ -4,15 +4,9 @@ from basicVariables import *
 
 
 class Stocks():
-  '''
-  Stock only has date and price and
-  the stocks are stored in dictionary prices
-  price format -> {date: price, ...}
-  '''
-
   def __init__(self, tickerSymbol):
     self.tickerSymbol = tickerSymbol
-    self.prices = {}
+    self.prices = {} # prices -> {date: price, ...}
     self.generateRandomPrices()
 
   def generateRandomPrices(self):
